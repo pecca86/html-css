@@ -1,0 +1,87 @@
+/* REMOVE DEFAULT STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CREATE A DEFAULT FONTSIZE SO REM USAGE IS EASIER */
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-nav {
+    padding: 2rem;
+    background-color: burlywood;
+    margin-bottom: 2rem;
+    
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 10rem;
+}
+
+.nav-list__logo {
+    margin-right: auto;
+}
+
+.nav-list__item {
+    font-size: 1.8rem;
+}
+
+.nav-list__container {
+    display: flex;
+    background-color: blue;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+  
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-banner {
+    background-color: aqua;
+    max-width: 130rem;
+}
+
+.shadow-box {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.box__rounded-sm {
+    border-radius: 0.5rem;
+}
+
+.heading-primary {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02rem;
+}
+
+.introduction {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
