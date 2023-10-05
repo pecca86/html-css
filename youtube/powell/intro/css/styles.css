@@ -11,11 +11,25 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #8ecae6;
+}
+
+a:hover,
+a:active {
+    color: #d5a743;
+}
+
 .top-nav {
     padding: 2rem;
-    background-color: burlywood;
+    background-color: #cdb4db;
     margin-bottom: 2rem;
-    
+    /* make nav sticky */
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav-list {
@@ -23,21 +37,19 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 6rem;
     padding: 0 10rem;
 }
 
 .nav-list__logo {
     margin-right: auto;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
 }
 
 .nav-list__item {
     font-size: 1.8rem;
-}
-
-.nav-list__container {
-    display: flex;
-    background-color: blue;
 }
 
 .container {
@@ -46,14 +58,15 @@ html {
     padding: 0 3.2rem;
   }
   
-header {
+.header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .hero-banner {
-    background-color: aqua;
+    background-color: #ffc8dd;
     max-width: 130rem;
 }
 
@@ -76,12 +89,18 @@ header {
 
 .heading-secondary {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    color: #404446;
 }
 
-.introduction {
-    line-height: 1.6;
-    font-size: 1.2rem;
+.divider {
+    width: 90%;
+    height: 0.1rem;
+    background-color: #919090;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

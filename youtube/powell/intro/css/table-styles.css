@@ -1,0 +1,10 @@
+.account-table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1.6rem 0.8rem;
+    font-size: 1.6rem;
+}
+
+th {
+    padding: 0.2rem;
+}

@@ -11,10 +11,6 @@ body {
     justify-content: center;
 }
 
-td {
-    text-align: center;
-}
-
 th {
     padding: 2%;
 }
@@ -24,7 +20,6 @@ th {
     /* remove borders and border spacing from html */
     border-collapse: separate;
     border-spacing: 0px 5px;
-    width: 70%;
 }
 
 .table-header{
