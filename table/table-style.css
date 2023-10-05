@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    padding: 2%;
+}
+
+.specs-table {
+    border: none;
+    /* remove borders and border spacing from html */
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    width: 70%;
+}
+
+.table-header{
+    background-color: #3e500f;
+    color: #fff;
+}
+
+.table-header-row {
+}
+
+td:nth-child(1) {
+    font-weight: 800;
+}
+
+/* change background color of odd numbered tr rows */
+tr:nth-child(even) {
+    background-color: #d5ebc6;
+}
+
+.table-body {}
+
+tr {
+}

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+
+.container.hero,
+nav {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 4%;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(255, 152, 34);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 44px;
+  padding-top: 20px;
+  margin-bottom: 36px;
+}
+
+section {
+  padding: 80px;
+  background-color: antiquewhite;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  /* makes child elements relative to THIS element */
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(49, 49, 49, 0.8),
+      rgba(76, 76, 76, 0.8)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+}
+
+.hero {
+  width: 80%;
+  position: absolute;
+  /* center in relation to PARETN*/
+  left: 50%;
+  top: 50%;
+  /* Center in relation to ELEMENT */
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+.hero-inner {
+  width: 50%;
+}
+
+.inner-section {
+  width: 80%;
+  padding-left: 5%;
+}
