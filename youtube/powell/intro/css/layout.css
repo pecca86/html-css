@@ -68,6 +68,10 @@ html {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid__span-2 {
+  grid-column: 1 / -1;
+}
+
 /* TEXT AND HEADINGS */
 .heading-primary {
   font-size: 4rem;
@@ -113,7 +117,11 @@ html {
 }
 
 .mb-sm {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-md {
+  margin-bottom: 1rem;
 }
 
 .mr-sm {
@@ -188,6 +196,4 @@ a:active {
   height: 0.1rem;
   background-color: #919090;
   margin: 0 auto;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
 }

@@ -1,0 +1,52 @@
+.sortby-select {
+  display: block;
+}
+
+.filter-input {
+  display: block;
+}
+
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.transaction-tools {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.btn__transaction {
+    color: black;
+    text-transform: inherit;
+    background: transparent;
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+.btn__transaction:hover {
+    border: 2px solid white;
+}
+
+.btn__transaction::selection {
+    border: 2px solid white;
+}
