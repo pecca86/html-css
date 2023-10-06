@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="css/layout.css" />
+    <link rel="stylesheet" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" media="screen" href="css/table-styles.css" />
+    <link rel="stylesheet" media="screen" href="css/account.css" />
+    <link rel="stylesheet" media="screen" href="css/pagination.css" />
+    <title>Transaction</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="top-nav nav-sticky">
+      <ul class="nav-list">
+        <li class="nav-list__logo">
+          <a href="home.html" style="color: #fff">MANI</a>
+        </li>
+        <li class="nav-list__item">Logout</li>
+        <li class="nav-list__item">Profile</li>
+      </ul>
+    </nav>
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <button class="btn btn__toolbar">
+        <a href="account.html">Transaction</a>
+      </button>
+      <button class="btn btn__toolbar btn__toolbar-selected">
+        Transactions
+      </button>
+      <button class="btn btn__toolbar">Date Spans</button>
+    </div>
+    <!-- HEADER -->
+    <header class="header hero-banner container shadow-box box__rounded-sm">
+      <h2 class="heading-secondary mb-sm">
+        Account information
+        <span class="text-lg"><a href="#">(Edit MODAL)</a></span>
+      </h2>
+      <div class="grid grid__2-cols">
+        <div class="account-info-box">
+          <p class="padding-b-sm text-strong heading-tertiary">Balance</p>
+          <p class="padding-b-sm text-strong heading-tertiary">Account name</p>
+          <p class="padding-b-sm text-strong heading-tertiary">IBAN</p>
+          <p class="padding-b-sm text-strong heading-tertiary">Savings Goal</p>
+        </div>
+        <div class="padding-b-sm account-data-box">
+          <p class="padding-b-sm heading-tertiary">1000.00€</p>
+          <p class="padding-b-sm heading-tertiary">Janina's Savings Account</p>
+          <p class="padding-b-sm heading-tertiary">FI20 0000 2222 1111 20</p>
+          <p class="padding-b-sm heading-tertiary">1400.00€</p>
+        </div>
+      </div>
+    </header>
+    <!-- TRANSACTION LIST -->
+    <section class="account-overview container">
+      <table class="transaction-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Sum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>02/02/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+          <tr>
+            <td>02/03/23</td>
+            <td>Paycheck</td>
+            <td>Pay</td>
+            <td>3100.50€</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="divider margin-bottom-2 margin-top-2"></div>
+    <!-- PAGINATION -->
+    <section class="pagination">
+      <div class="pagination">
+        <a href="#" class="page-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
+        </a>
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link page-link--current">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link">5</a>
+        <a href="#" class="page-link">6</a>
+        <span class="dots">...</span>
+        <a href="#" class="page-link">23</a>
+        <a href="#" class="page-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

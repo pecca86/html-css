@@ -8,3 +8,16 @@
 th {
     padding: 0.2rem;
 }
+
+
+.transaction-table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1.2rem 0.8rem;
+    font-size: 1.4rem;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #f1faee;
+}
+

@@ -133,10 +133,20 @@ html {
 }
 
 /* CTA & LINKS */
-a:link,
+a:link {
+    text-decoration: none;
+    color: #1d3557;
+}
+
 a:visited {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+.btn a:link,
+.btn a:visited {
   text-decoration: none;
-  color: #457b9d;
+  color: #fff;
 }
 
 a:hover,
