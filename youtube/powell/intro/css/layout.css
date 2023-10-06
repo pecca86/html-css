@@ -21,8 +21,8 @@
     lg = 1.8rem
  */
 
- /* HEADINGS */
- /* 
+/* HEADINGS */
+/* 
     primary = 4rem
     secondary = 2rem
     tertiary = 1.6rem
@@ -30,15 +30,15 @@
 
 /* REMOVE DEFAULT STYLES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* CREATE A DEFAULT FONTSIZE SO REM USAGE IS EASIER */
 html {
-    font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* STRUCTURES */
@@ -49,69 +49,127 @@ html {
 }
 
 .shadow-box {
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
 
 .box__rounded-sm {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* GRIDS */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid__2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* TEXT AND HEADINGS */
 .heading-primary {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.02rem;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
 }
 
 .heading-secondary {
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 0.01rem;
-    line-height: 1.5;
-    color: #404446;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  line-height: 1.5;
+  color: #404446;
 }
 
 .heading-tertiary {
-    font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 0.01rem;
-    line-height: 1.5;
-    color: #404446;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  line-height: 1.5;
+  color: #404446;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.text-strong {
+  font-weight: 700;
 }
 
 /* MARGINS & PADDING */
 .mt-sm {
-    margin-top: 1.6rem;
+  margin-top: 1.6rem;
 }
 
 .mb-sm {
-    margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .mr-sm {
-    margin-right: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .ml-sm {
-    margin-left: 1.6rem;
+  margin-left: 1.6rem;
 }
 
 .padding-sm {
-    padding: 1.6rem;
+  padding: 0.5rem;
+}
+
+.padding-b-sm {
+  padding-bottom: 0.5rem;
 }
 
 /* CTA & LINKS */
 a:link,
 a:visited {
-    text-decoration: none;
-    color: #457b9d;
+  text-decoration: none;
+  color: #457b9d;
 }
 
 a:hover,
 a:active {
-    color: #d5a743;
+  color: #d5a743;
+}
+
+/* 40px 999em 40px 999em */
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4rem;
+  border: none;
+}
+
+/* PRIMARY */
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: #000;
+  color: #fff;
 }
 
 /* STAND ALONE ELEMENTS */
@@ -123,4 +181,3 @@ a:active {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-

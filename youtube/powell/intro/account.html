@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="screen" href="css/layout.css" />
     <link rel="stylesheet" media="screen" href="css/styles.css" />
-    <link rel="stylesheet" media="screen" href="css/table-styles.css" />
+    <link rel="stylesheet" media="screen" href="css/account.css" />
     <title>Account</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
     <nav class="top-nav nav-sticky">
-        <ul class="nav-list">
-          <li class="nav-list__logo">MANI</li>
-          <li class="nav-list__item">Logout</li>
-          <li class="nav-list__item">Profile</li>
-        </ul>
-      </nav>
-</body>
+      <ul class="nav-list">
+        <li class="nav-list__logo">MANI</li>
+        <li class="nav-list__item">Logout</li>
+        <li class="nav-list__item">Profile</li>
+      </ul>
+    </nav>
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <button class="btn btn__toolbar btn__toolbar-selected">Account</button>
+        <button class="btn btn__toolbar">Transactions</button>
+        <button class="btn btn__toolbar">Date Spans</button>
+    </div>
+    <!-- HEADER -->
+    <header class="header hero-banner container shadow-box box__rounded-sm">
+      <h2 class="heading-secondary mb-sm">
+        Account information
+        <span class="text-lg"><a href="#">(Edit MODAL)</a></span>
+      </h2>
+      <div class="grid grid__2-cols">
+        <div class="account-info-box">
+          <p class="padding-b-sm text-strong heading-tertiary">Balance</p>
+          <p class="padding-b-sm text-strong heading-tertiary">Account name</p>
+          <p class="padding-b-sm text-strong heading-tertiary">IBAN</p>
+          <p class="padding-b-sm text-strong heading-tertiary">Savings Goal</p>
+        </div>
+        <div class="padding-b-sm account-data-box">
+          <p class="padding-b-sm heading-tertiary">1000.00€</p>
+          <p class="padding-b-sm heading-tertiary">Janina's Savings Account</p>
+          <p class="padding-b-sm heading-tertiary">FI20 0000 2222 1111 20</p>
+          <p class="padding-b-sm heading-tertiary">1400.00€</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRAPH -->
+    <section class="graph container">
+      <h2 class="heading-secondary mb-sm">Forecast</h2>
+      <div>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script>
+        const lineCtx = document.getElementById("lineChart");
+
+        new Chart(lineCtx, {
+          type: "line",
+          data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [
+              {
+                label: "# of Votes",
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      </script>
+    </section>
+
+    <div class="divider margin-bottom-2 margin-top-2"></div>
+
+    <!-- PIE CHART -->
+    <section class="graph container">
+      <h2 class="heading-secondary mb-sm">Spending / Category</h2>
+      <div>
+        <canvas id="pieChart"></canvas>
+      </div>
+      <script>
+        const ctx = document.getElementById("pieChart");
+
+        new Chart(ctx, {
+          type: "pie",
+          data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [
+              {
+                label: "# of Votes",
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      </script>
+    </section>
+  </body>
 </html>

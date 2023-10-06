@@ -1,0 +1,25 @@
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn__toolbar {
+    /* background-color: #a8dadc; */
+    /* background-color: #1d3557; */
+    background-color: #457b9d;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn__toolbar-selected {
+    background-color: #f1faee;
+    color: #000;
+    border-top: #a8dadc 2px solid;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #333;
+  color: #fff;
+}
