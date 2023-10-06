@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <style>
+      * {
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      #btn {
+        padding: 5px 10px;
+        background: yellowgreen;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #cnt {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: hotpink;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        display: none;
+      }
+
+      .close {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+      }
+
+      input:checked + div + #cnt {
+        display: flex;
+      }
+
+      input:checked + div + #cnt + .close {
+        display: block;
+      }
+    </style>
+    <label>
+      <input type="checkbox" />
+      <div id="btn">OPEN</div>
+      <div id="cnt">
+        
+        <form action="">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+        </form>
+    
+    </div>
+      <div class="close">
+        X
+    </div>
+    </label>
+  </body>
+</html>

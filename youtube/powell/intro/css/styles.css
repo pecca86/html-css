@@ -1,30 +1,37 @@
-/* REMOVE DEFAULT STYLES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* COLORS */
+/*
+    Dark red:   #e63946
+    Turqouse:        #a8dadc
+    Beige:      #f1faee
+    Dark blue:  #1d3557
+    Light blue: #457b9d
+*/
 
-/* CREATE A DEFAULT FONTSIZE SO REM USAGE IS EASIER */
-html {
-    font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* MARGINS & PADDINGS */
+/* 
+    sm = 1.6rem
+    md = 3.2rem
+    lg = 4.8rem
+*/
 
-a:link,
-a:visited {
-    text-decoration: none;
-    color: #8ecae6;
-}
+/* FONT-SIZE */
+/* 
+    sm = 1.4rem
+    md = 1.6rem
+    lg = 1.8rem
+ */
 
-a:hover,
-a:active {
-    color: #d5a743;
-}
+ /* HEADINGS */
+ /* 
+    primary = 4rem
+    secondary = 2rem
+    tertiary = 1.6rem
+  */
 
 .top-nav {
     padding: 2rem;
-    background-color: #cdb4db;
+    background-color: #e63946;
+    color: whitesmoke;
     margin-bottom: 2rem;
     /* make nav sticky */
     position: sticky;
@@ -52,12 +59,6 @@ a:active {
     font-size: 1.8rem;
 }
 
-.container {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-  }
-  
 .header {
     display: flex;
     justify-content: center;
@@ -66,41 +67,6 @@ a:active {
 }
 
 .hero-banner {
-    background-color: #ffc8dd;
+    background-color: #f1faee;
     max-width: 130rem;
-}
-
-.shadow-box {
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-
-.box__rounded-sm {
-    border-radius: 0.5rem;
-}
-
-.heading-primary {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.02rem;
-    margin-bottom: 2rem;
-}
-
-.heading-secondary {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    letter-spacing: 0.01rem;
-    line-height: 1.5;
-    color: #404446;
-}
-
-.divider {
-    width: 90%;
-    height: 0.1rem;
-    background-color: #919090;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }

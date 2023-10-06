@@ -1,0 +1,126 @@
+/* COLORS */
+/*
+    Dark red:   #e63946
+    Turqouse:        #a8dadc
+    Beige:      #f1faee
+    Dark blue:  #1d3557
+    Light blue: #457b9d
+*/
+
+/* MARGINS & PADDINGS */
+/* 
+    sm = 1.6rem
+    md = 3.2rem
+    lg = 4.8rem
+*/
+
+/* FONT-SIZE */
+/* 
+    sm = 1.4rem
+    md = 1.6rem
+    lg = 1.8rem
+ */
+
+ /* HEADINGS */
+ /* 
+    primary = 4rem
+    secondary = 2rem
+    tertiary = 1.6rem
+  */
+
+/* REMOVE DEFAULT STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CREATE A DEFAULT FONTSIZE SO REM USAGE IS EASIER */
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* STRUCTURES */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.shadow-box {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.box__rounded-sm {
+    border-radius: 0.5rem;
+}
+
+/* TEXT AND HEADINGS */
+.heading-primary {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    color: #404446;
+}
+
+.heading-tertiary {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    color: #404446;
+}
+
+/* MARGINS & PADDING */
+.mt-sm {
+    margin-top: 1.6rem;
+}
+
+.mb-sm {
+    margin-bottom: 1.6rem;
+}
+
+.mr-sm {
+    margin-right: 1.6rem;
+}
+
+.ml-sm {
+    margin-left: 1.6rem;
+}
+
+.padding-sm {
+    padding: 1.6rem;
+}
+
+/* CTA & LINKS */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #457b9d;
+}
+
+a:hover,
+a:active {
+    color: #d5a743;
+}
+
+/* STAND ALONE ELEMENTS */
+.divider {
+  width: 90%;
+  height: 0.1rem;
+  background-color: #919090;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
