@@ -140,6 +140,56 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.pt-sm {
+  padding-top: 0.5rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pr-sm {
+  padding-right: 0.5rem;
+}
+
+.pl-sm {
+  padding-left: 0.5rem;
+}
+
+.pb-md {
+  padding-bottom: 1rem;
+}
+
+.pt-md {
+  padding-top: 1rem;
+}
+
+.pl-md {
+  padding-left: 1rem;
+}
+
+.pr-md {
+  padding-right: 1rem;
+}
+
+.pt-lg {
+  padding-top: 1.5rem;
+}
+
+.pb-lg {
+  padding-bottom: 1.5rem;
+}
+
+.pl-lg {
+  padding-left: 1.5rem;
+}
+
+.pr-lg {
+  padding-right: 1.5rem;
+}
+
+
+
 /* CTA & LINKS */
 a:link {
     text-decoration: none;
@@ -196,4 +246,6 @@ a:active {
   height: 0.1rem;
   background-color: #919090;
   margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
