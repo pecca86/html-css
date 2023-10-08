@@ -107,8 +107,24 @@ html {
   font-size: 1.2rem;
 }
 
+.text-xl {
+  font-size: 1.4rem;
+}
+
 .text-strong {
   font-weight: 700;
+}
+
+.line-height-sm {
+  line-height: 0.5;
+}
+
+.line-height-md {
+  line-height: 1;
+}
+
+.line-height-lg {
+  line-height: 1.5;
 }
 
 /* MARGINS & PADDING */
