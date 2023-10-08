@@ -188,17 +188,15 @@ html {
   padding-right: 1.5rem;
 }
 
-
-
 /* CTA & LINKS */
 a:link {
-    text-decoration: none;
-    color: #1d3557;
+  text-decoration: none;
+  color: #1d3557;
 }
 
 a:visited {
-    text-decoration: none;
-    color: #1d3557;
+  text-decoration: none;
+  color: #1d3557;
 }
 
 .btn a:link,
@@ -218,7 +216,7 @@ a:active {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.2rem 2rem;
+  padding: 0.8rem 2rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -238,6 +236,19 @@ a:active {
 .btn--primary:active {
   background-color: #000;
   color: #fff;
+}
+
+.btn__transparent {
+  background-color: transparent;
+}
+
+.btn__bordered {
+  border: 2px solid #000000;
+}
+
+.btn__warning {
+  background-color: #ffafcc;
+  color: #000;
 }
 
 /* STAND ALONE ELEMENTS */
